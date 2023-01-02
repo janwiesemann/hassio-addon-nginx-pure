@@ -1,0 +1,8 @@
+---
+configuration:
+  config:
+    name: nginx.conf
+    description: Path to you nginx.conf file. (i.e. '/share/nginx/nginx.conf')
+network:
+  80/tcp: "HTTP (non-SSL) Port; Default Port: 80"
+  443/tcp: "HTTPS (SSL) Port; Default Port: 443"

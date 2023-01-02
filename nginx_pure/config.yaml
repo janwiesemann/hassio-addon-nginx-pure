@@ -1,0 +1,25 @@
+---
+version: 0.0.1
+hassio_api: true
+slug: nginx_pure
+name: NGINX pure
+description: NGINX but in stupid
+url: https://github.com/janwiesemann/hassio-addon-nginx-pure
+arch:
+  - armhf
+  - armv7
+  - aarch64
+  - amd64
+  - i386
+image: homeassistant/{arch}-addon-nginx_proxy
+init: false
+map:
+  - ssl
+  - share
+options:
+  config: null
+ports:
+  80/tcp: 80
+  443/tcp: 443
+schema:
+  config: str
