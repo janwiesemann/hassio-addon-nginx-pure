@@ -1,5 +1,5 @@
 ---
-version: 0.0.1
+version: 0.0.2
 hassio_api: true
 slug: nginx_pure
 name: NGINX pure
@@ -11,7 +11,7 @@ arch:
   - aarch64
   - amd64
   - i386
-image: homeassistant/{arch}-addon-nginx_proxy
+#image: homeassistant/{arch}-addon-nginx_proxy
 init: false
 map:
   - ssl

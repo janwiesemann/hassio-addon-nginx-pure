@@ -1,9 +1,11 @@
 #!/usr/bin/with-contenv bashio
 set -e
 
-DHPARAMS_PATH=/data/dhparams.pem
+bashio::log.info "===> Settings Info <==="
+bashio::log.info "Recommended settings"
+bashio::log.info "    proxy_pass http://homeassistant.local.hass.io:$(bashio::core.port);"
 
-CLOUDFLARE_CONF=/data/cloudflare.conf
+DHPARAMS_PATH=/data/dhparams.pem
 
 CONFIG_PATH=$(bashio::config 'config')
 
